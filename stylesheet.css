@@ -1,16 +1,39 @@
-html{
-font-family: monospace;
-background-color: rgb(27, 27, 27);
-color: rgb(155, 155, 155);
-text-align: center;
-}
-.btn {
-    background-color: rgb(155, 155, 155);
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+   :root {
+      --main-bg-color: #222831;
+      --secondary-bg-color: #393e46;
+      --interactive-color: #b55400;
+      --text-color: #eeeeee;
+      background-color: var(--main-bg-color);
+      color: var(--text-color);
+      font-family: Azonix Regular, monospace;
+  }
+  
+  @font-face {
+      font-family: 'Azonix Regular';
+      font-style: normal;
+      font-weight: normal;
+      src: local('Azonix Regular'), url('Azonix.woff') format('woff');
+  }
+  
+  nav {
+      background-color: var(--secondary-bg-color);
+      padding-top: 50px;
+      padding-right: 30px;
+      padding-bottom: 50px;
+      padding-left: 80px;
+  }
+  
+  nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+  
+  .sections {
+      display: none;
+  }
+  
+  .sections:target {
+      display: block;
   }
